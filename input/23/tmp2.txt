@@ -1,0 +1,32 @@
+set b 65            b = 65
+set c b             b = 65 c = 65
+jnz a 2
+jnz 1 5
+mul b 100           b = 6500 c = 65
+sub b -100000       b = 106500 c = 65
+set c b             b = 106500 c = 106500
+sub c -17000        b = 106500 c = 123500
+set f 1             b = 106500 c = 123500 f = 1
+set d 2
+set e 2
+set g d             b = 106500 c = 123500 d = 2 e = 52151 f = 1 g = -53249
+mul g e             b = 106500 c = 123500 d = 2 e = 52151 f = 1 g = -53249
+sub g b             b = 106500 c = 123500 d = 2 e = 53250 f = 1 g = 0
+jnz g 2
+set f 0             b = 106500 c = 123500 d = 2 e = 53250 f = 0 g = 0
+sub e -1            b = 106500 c = 123500 d = 2 e = 53251 f = 0 g = 0
+set g e             b = 106500 c = 123500 d = 2 e = 53251 f = 0 g = 53251
+sub g b             b = 106500 c = 123500 d = 2 e = 52151 f = 1 g = -53249
+jnz g -8
+sub d -1
+set g d
+sub g b
+jnz g -13
+jnz f 2
+sub h -1
+set g b
+sub g c
+jnz g 2
+jnz 1 3
+sub b -17
+jnz 1 -23

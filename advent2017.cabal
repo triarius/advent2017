@@ -1,0 +1,88 @@
+-- This file has been generated from package.yaml by hpack version 0.27.0.
+--
+-- see: https://github.com/sol/hpack
+--
+-- hash: 4c43900239d253d2db37f0e8f0d9a5f548f47c4dd56191a2f85e477495f0a243
+
+name:           advent2017
+version:        0.1.0.0
+category:       Web
+homepage:       https://github.com/trigtriarius/advent2017#readme
+author:         Narthana Epa
+maintainer:     narthana.epa@gmail.com
+copyright:      GPLv3
+license:        BSD3
+license-file:   LICENSE
+build-type:     Simple
+cabal-version:  >= 1.10
+
+extra-source-files:
+    README.md
+
+library
+  exposed-modules:
+      Advent.Lib.ParseIO
+      Advent.Lib.KnotHash
+      Advent.Lib.Misc
+      Advent.Lib.Primes
+      Advent.Lib.Queue
+      Advent.Lib.Symmetric
+      Advent.Lib.UnionFind
+      Advent.Prob01
+      Advent.Prob02
+      Advent.Prob03
+      Advent.Prob04
+      Advent.Prob05
+      Advent.Prob06
+      Advent.Prob07
+      Advent.Prob08
+      Advent.Prob09
+      Advent.Prob10
+      Advent.Prob11
+      Advent.Prob12
+      Advent.Prob13
+      Advent.Prob14
+      Advent.Prob15
+      Advent.Prob16
+      Advent.Prob17
+      Advent.Prob18
+      Advent.Prob19
+      Advent.Prob20
+      Advent.Prob21
+      Advent.Prob22
+      Advent.Prob23
+      Advent.Prob24
+      Advent.Prob25
+  other-modules:
+      Paths_advent2017
+  hs-source-dirs:
+      src
+  build-depends:
+      arithmoi
+    , array
+    , base >=4.7 && <5
+    , containers
+    , finite-typelits
+    , hashable
+    , hashtables
+    , matrix
+    , megaparsec
+    , monad-loops
+    , pqueue
+    , primitive
+    , split
+    , vector
+    , vector-space
+  default-language: Haskell2010
+
+executable adv2017
+  main-is: Main.hs
+  other-modules:
+      Paths_advent2017
+  hs-source-dirs:
+      exec
+  build-depends:
+      advent2017
+    , base >=4.7 && <5
+    , bits
+  default-language: Haskell2010

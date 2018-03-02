@@ -1,0 +1,78 @@
+name:                advent2017
+version:             0.1.0.0
+#synopsis:
+#description:
+homepage:            https://github.com/trigtriarius/advent2017#readme
+license:             BSD3
+author:              Narthana Epa
+maintainer:          narthana.epa@gmail.com
+copyright:           GPLv3
+category:            Web
+extra-source-files:
+  - README.md
+
+dependencies:
+  - base >= 4.7 && < 5
+
+library:
+  source-dirs: src
+  exposed-modules:
+    - Advent.Lib.ParseIO
+    - Advent.Lib.KnotHash
+    - Advent.Lib.Misc
+    - Advent.Lib.Primes
+    - Advent.Lib.Queue
+    - Advent.Lib.Symmetric
+    - Advent.Lib.UnionFind
+    - Advent.Prob01
+    - Advent.Prob02
+    - Advent.Prob03
+    - Advent.Prob04
+    - Advent.Prob05
+    - Advent.Prob06
+    - Advent.Prob07
+    - Advent.Prob08
+    - Advent.Prob09
+    - Advent.Prob10
+    - Advent.Prob11
+    - Advent.Prob12
+    - Advent.Prob13
+    - Advent.Prob14
+    - Advent.Prob15
+    - Advent.Prob16
+    - Advent.Prob17
+    - Advent.Prob18
+    - Advent.Prob19
+    - Advent.Prob20
+    - Advent.Prob21
+    - Advent.Prob22
+    - Advent.Prob23
+    - Advent.Prob24
+    - Advent.Prob25
+  dependencies:
+    - megaparsec
+    - split
+    - vector
+    - pqueue
+    - finite-typelits
+    - containers
+    - primitive
+    - hashable
+    - hashtables
+    - monad-loops
+    - vector
+    - containers
+    - split
+    - pqueue
+    - matrix
+    - array
+    - vector-space
+    - arithmoi
+
+executables:
+  adv2017:
+    main:             Main.hs
+    source-dirs:      exec
+    dependencies:
+      - advent2017
+      - bits
