@@ -2,7 +2,6 @@
 
 module Advent.Prob03 (solution) where
 
-import           Control.Arrow            ((&&&))
 import           Control.Monad.Loops      (dropWhileM)
 import           Control.Monad.ST         (runST, ST)
 import           Data.Maybe               (fromMaybe)

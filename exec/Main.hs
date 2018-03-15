@@ -55,6 +55,7 @@ printSol 22 path = print =<< Prob22.solution <$> readFile path
 printSol 23 path = print =<< Prob23.solution <$> readFile path
 printSol 24 path = print =<< Prob24.solution <$> readFile path
 printSol 25 path = print =<< Prob25.solution <$> readFile path
+printSol _  _    = putStrLn "Incorrect problem number."
 
 main :: IO ()
 main = do

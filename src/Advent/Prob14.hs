@@ -12,17 +12,12 @@ import           Control.Monad.ST
 import           Data.Array.Unboxed
 import qualified Data.Array                 as A
 import           Data.Array.MArray          (MArray)
-import qualified Data.Array.MArray          as M
 import           Data.Array.ST
-import           Data.Char                  (digitToInt, isSpace, intToDigit)
-import           Data.Ix
+import           Data.Char                  (isSpace, intToDigit)
 import           Data.List                  (foldl')
-import           Data.List.Split            (chunksOf)
 import           Data.Maybe                 (mapMaybe)
-import           Data.Set                   (Set)
-import qualified Data.Set                   as S
 import           Text.Megaparsec            (parseMaybe)
-import           Text.Megaparsec.Char.Lexer as L
+import qualified Text.Megaparsec.Char.Lexer as L
 import           Numeric                    (showIntAtBase)
 
 dim :: Int

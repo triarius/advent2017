@@ -68,5 +68,5 @@ supps suppMap = map (id &&& flip (M.findWithDefault 0) suppMap)
 solution :: String -> (String, Int)
 solution input = let Just pT = parseMaybe progList input
                      b       = findBottom pT
-                     supps   = mkSupps pT b
-                  in (id &&& lastUnbalanced pT supps "") b
+                     ss      = mkSupps pT b
+                  in (id &&& lastUnbalanced pT ss "") b

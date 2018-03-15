@@ -2,7 +2,6 @@ module Advent.Prob23 (solution) where
 
 import           Advent.Lib.ParseIO
 import           Advent.Lib.Primes (isPrime)
-import           Control.Arrow ((&&&))
 import           Data.Map (Map)
 import qualified Data.Map as M
 import           Data.Vector (Vector)

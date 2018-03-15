@@ -11,11 +11,10 @@ module Advent.Lib.UnionFind ( UnionFind(..)
                             , generate
                             ) where
 
-import Control.Arrow ((&&&))
-import Data.Ix
-import Data.Array (Array)
-import qualified Data.Array as A
-import Data.Array.MArray (MArray)
+import           Control.Arrow ((&&&))
+import           Data.Array (Array)
+import           Data.Ix
+import           Data.Array.MArray (MArray)
 import qualified Data.Array.MArray as M
 
 data UnionFind i = UnionFind { parents :: Array i i

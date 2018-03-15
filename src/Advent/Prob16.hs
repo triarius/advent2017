@@ -5,7 +5,6 @@ module Advent.Prob16 (solution) where
 import           Advent.Lib.Misc (pairMap)
 import           Advent.Lib.ParseIO
 import           Advent.Lib.Symmetric
-import           Control.Arrow ((&&&))
 import           GHC.TypeNats
 import           Data.Semigroup
 import qualified Data.Vector.Unboxed as V

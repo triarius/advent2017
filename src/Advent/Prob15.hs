@@ -1,9 +1,13 @@
 module Advent.Prob15 (solution) where
 
-import Advent.Lib.ParseIO
 import Control.Monad
 import Data.Bifunctor
 import Data.Bits
+import Prelude hiding ((^))
+import qualified Prelude ((^))
+
+(^) :: Num a => a -> Int -> a
+(^) = (Prelude.^)
 
 multA :: Int
 multA = 16807
@@ -24,7 +28,7 @@ divisor :: Int
 divisor = 2147483647
 
 gen :: Int -> Int -> Int
-gen last mult = (last * mult) `rem` divisor
+gen prev mult = (prev * mult) `rem` divisor
 
 list :: Int -> Int -> [Int]
 list mult = iterate (gen mult)
