@@ -2,7 +2,7 @@
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: 4c43900239d253d2db37f0e8f0d9a5f548f47c4dd56191a2f85e477495f0a243
+-- hash: ba41a19e6eedd209861ccfa4f3ec970d650219f47e2b58dd0f08e82d706c5623
 
 name:           advent2017
 version:        0.1.0.0
@@ -57,6 +57,7 @@ library
       Paths_advent2017
   hs-source-dirs:
       src
+  ghc-options: -Wall -O2
   build-depends:
       arithmoi
     , array
@@ -81,6 +82,7 @@ executable adv2017
       Paths_advent2017
   hs-source-dirs:
       exec
+  ghc-options: -Wall -O2
   build-depends:
       advent2017
     , base >=4.7 && <5

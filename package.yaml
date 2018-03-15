@@ -11,6 +11,8 @@ category:            Web
 extra-source-files:
   - README.md
 
+ghc-options: -Wall -O2
+
 dependencies:
   - base >= 4.7 && < 5
 
