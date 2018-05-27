@@ -1,8 +1,8 @@
--- This file has been generated from package.yaml by hpack version 0.27.0.
+-- This file has been generated from package.yaml by hpack version 0.28.2.
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: ba41a19e6eedd209861ccfa4f3ec970d650219f47e2b58dd0f08e82d706c5623
+-- hash: 43b1da2827ce694865c95ab0009b8627d45618a524cb4a6607c6ff9345c61730
 
 name:           advent2017
 version:        0.1.0.0
@@ -15,7 +15,6 @@ license:        BSD3
 license-file:   LICENSE
 build-type:     Simple
 cabal-version:  >= 1.10
-
 extra-source-files:
     README.md
 

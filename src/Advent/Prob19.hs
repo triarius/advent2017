@@ -3,7 +3,6 @@
 module Advent.Prob19 (solution) where
 
 import           Advent.Lib.ParseIO
-import           Control.Applicative
 import           Data.AdditiveGroup
 import           Data.Char (isSpace, isUpper)
 import qualified Data.Vector.Unboxed as VU
